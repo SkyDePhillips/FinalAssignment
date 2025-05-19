@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>forms</title>
+        <link rel="stylesheet" href="html_reference.css">
+        </head>
+        <body>
+            <nav>
+                <a href="skylard_paragraph.html">Text</a><br>
+                <a href="skylard_headline.html">Headlines</a><br>
+                <a href="skylard_lists.html">Lists</a><br>
+                <a href="skylard_anchor.html">Anchor</a><br>
+                <a href="skylard_images.html">Images</a><br>
+                <a href="skylard_svg.html">SVG</a><br>
+                <a href="skylard_iframe.html">Iframe</a><br>
+                <a href="skylard_video.html">Video</a><br>
+                <a href="skylard_audio.html">Audio</a><br>
+                <a href="skylard_forms.html">Forms</a><br>
+                <a href="skylard_tables.html">Tables</a><br>
+            </nav>
+<section> 
+<h1><code>&lt;form&gt;</h1></code>
+
+<h1>The form tag</h1>
+
+<p>The HTML <code>&lt;form&gt;</code> tag is used to create an interactive form that allows users to enter and submit data. Forms<br>
+
+are essential for user interactions such as logging in, signing up, searching, and submitting feedback.</p>
+
+<p>The <code>&lt;form&gt;</code> element acts as a container for various input elements like text fields, radio buttons, checkboxes,<br>
+
+and submit buttons.</p>
+</section>
+<section> 
+<h2>Basic Syntax</h2>
+
+<code>&lt;form action&equals;&quot;submit.php&quot; method&equals;&quot;post&quot;&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for&equals;&quot;name&quot;&gt;Name&colon;&lt;&sol;label&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type&equals;&quot;text&quot; id&equals;&quot;name&quot; name&equals;&quot;name&quot;&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type&equals;&quot;submit&quot; value&equals;&quot;Submit&quot;&gt;<br>
+&lt;&sol;form&gt;</code>
+</section>
+<section> 
+<h2>Common Attributes of &lt;form&gt;</h2>
+
+<p>action &minus; Specifies the URL where form data is sent after submission. &lt;form action&equals;&quot;&sol;submit&ndash;form&quot;&gt;<br>
+<br>
+method &minus; Defines how the form data is sent.</p>
+
+<ul><li>&quot;GET&quot; (default) &minus; Sends data in the URL query string.
+
+<li>&quot;POST&quot; &minus; Sends data in the request body (more secure for sensitive data).
+<br></ul>
+
+<code>&lt;form action&equals;&quot;&sol;submit&quot; method&equals;&quot;post&quot;&gt;</code>
+
+<p><code>autocomplete</code> &minus; Enables or disables autofill.</p>
+
+<code>&lt;form autocomplete&equals;&quot;on&quot;&gt;</code>
+
+<p><code>target</code> &minus; Specifies where to display the response (_self, _blank, _parent, _top).</p>
+
+<code>&lt;form action&equals;&quot;submit.php&quot; target&equals;&quot;_blank&quot;&gt;</code>
+</section>
+<section> 
+<h2>Common Form&ndash;Associated Tags</h2>
+
+<h3><code>&lt;input&gt;</code> &minus; User Input Fields</h3>
+
+<p>The <code>&lt;input&gt;</code> tag is used to collect user input. Common types include&colon;</p>
+
+<code>&lt;input type&equals;&quot;text&quot; name&equals;&quot;username&quot; placeholder&equals;&quot;Enter your name&quot;&gt;<br>
+&lt;input type&equals;&quot;password&quot; name&equals;&quot;password&quot; placeholder&equals;&quot;Enter your password&quot;&gt;<br>
+&lt;input type&equals;&quot;email&quot; name&equals;&quot;email&quot; required&gt;<br>
+&lt;input type&equals;&quot;checkbox&quot; name&equals;&quot;subscribe&quot;&gt; Subscribe to newsletter<br>
+&lt;input type&equals;&quot;radio&quot; name&equals;&quot;gender&quot; value&equals;&quot;male&quot;&gt; Male<br>
+&lt;input type&equals;&quot;radio&quot; name&equals;&quot;gender&quot; value&equals;&quot;female&quot;&gt; Female<br>
+&lt;input type&equals;&quot;submit&quot; value&equals;&quot;Submit&quot;&gt;</code>
+</section>
+<section> 
+<h3><code>&lt;label&gt;</code> &minus; Descriptive Labels</h3>
+
+<p>The <code>&lt;label&gt;</code> tag improves accessibility by linking labels to inputs.</p>
+
+<code>&lt;label for&equals;&quot;email&quot;&gt;Email&colon;&lt;&sol;label&gt;<br>
+&lt;input type&equals;&quot;email&quot; id&equals;&quot;email&quot; name&equals;&quot;email&quot;&gt;</code>
+</section>
+<section> 
+<h3><code>&lt;textarea&gt;</code> &minus; Multiline Input</h3>
+
+<p>For long text inputs like messages or descriptions&colon;</p>
+
+<code>&lt;label for&equals;&quot;message&quot;&gt;Message&colon;&lt;&sol;label&gt;<br>
+&lt;textarea id&equals;&quot;message&quot; name&equals;&quot;message&quot; rows&equals;&quot;4&quot; cols&equals;&quot;50&quot;&gt;&lt;&sol;textarea&gt;</code>
+</section>
+<section>
+<h3><code>&lt;select&gt;</code> &minus; Dropdown Menus</h3>
+
+<p>The <code>&lt;select&gt;</code> tag creates a dropdown list.</p>
+
+<code>&lt;label for&equals;&quot;country&quot;&gt;Country&colon;&lt;&sol;label&gt;<br>
+&lt;select id&equals;&quot;country&quot; name&equals;&quot;country&quot;&gt;<br>
+&lt;option value&equals;&quot;us&quot;&gt;United States&lt;&sol;option&gt;<br>
+&lt;option value&equals;&quot;uk&quot;&gt;United Kingdom&lt;&sol;option&gt;<br>
+&lt;option value&equals;&quot;ca&quot;&gt;Canada&lt;&sol;option&gt;<br>
+&lt;&sol;select&gt;</code>
+</section>
+<section> 
+<h3><code>&lt;button&gt;</code> &minus; Custom Buttons</h3>
+
+<p>You can use a <code>&lt;button&gt;</code> instead of an<code> &lt;input type &equals;&quot;submit&quot;&gt;.</code></p>
+
+<code>&lt;button type&equals;&quot;submit&quot;&gt;Submit Form&lt;&sol;button&gt;</code>
+</section>
+<section> 
+<h3><code>&lt;fieldset&gt;</code> and <code>&lt;legend&gt;</code> &minus; Grouping Fields</h3>
+
+<p>These tags group related form elements.</p>
+
+<code>&lt;fieldset&gt;<br>
+&lt;legend&gt;Personal Information&lt;&sol;legend&gt;<br>
+&lt;label for&equals;&quot;name&quot;&gt;Name&colon;&lt;&sol;label&gt;<br>
+&lt;input type&equals;&quot;text&quot; id&equals;&quot;name&quot; name&equals;&quot;name&quot;&gt;<br>
+&lt;&sol;fieldset&gt;</code>
+</section>
+<section> 
+<h2>Example&colon; Complete Form</h2>
+
+<code>&lt;form action&equals;&quot;&sol;submit&quot; method&equals;&quot;post&quot;&gt;<br>
+&lt;fieldset&gt;<br>
+&lt;legend&gt;Sign Up&lt;&sol;legend&gt;<br>
+&lt;label for&equals;&quot;name&quot;&gt;Name&colon;&lt;&sol;label&gt;<br>
+&lt;input type&equals;&quot;text&quot; id&equals;&quot;name&quot; name&equals;&quot;name&quot; required&gt;<br>
+&lt;label for&equals;&quot;email&quot;&gt;Email&colon;&lt;&sol;label&gt;<br>
+&lt;input type&equals;&quot;email&quot; id&equals;&quot;email&quot; name&equals;&quot;email&quot; required&gt;<br>
+&lt;label for&equals;&quot;password&quot;&gt;Password&colon;&lt;&sol;label&gt;<br>
+&lt;input type&equals;&quot;password&quot; id&equals;&quot;password&quot; name&equals;&quot;password&quot; required&gt;<br>
+&lt;label&gt;Gender&colon;&lt;&sol;label&gt;<br>
+&lt;input type&equals;&quot;radio&quot; name&equals;&quot;gender&quot; value&equals;&quot;male&quot;&gt; Male<br>
+&lt;input type&equals;&quot;radio&quot; name&equals;&quot;gender&quot; value&equals;&quot;female&quot;&gt; Female<br>
+&lt;label for&equals;&quot;country&quot;&gt;Country&colon;&lt;&sol;label&gt;<br>
+&lt;select id&equals;&quot;country&quot; name&equals;&quot;country&quot;&gt;<br>
+&lt;option value&equals;&quot;us&quot;&gt;United States&lt;&sol;option&gt;<br>
+&lt;option value&equals;&quot;uk&quot;&gt;United Kingdom&lt;&sol;option&gt;<br>
+&lt;option value&equals;&quot;ca&quot;&gt;Canada&lt;&sol;option&gt;<br>
+&lt;&sol;select&gt;<br>
+&lt;input type&equals;&quot;checkbox&quot; name&equals;&quot;terms&quot; required&gt; I accept the terms and conditions<br>
+&lt;button type&equals;&quot;submit&quot;&gt;Register&lt;&sol;button&gt;<br>
+&lt;&sol;fieldset&gt;<br>
+&lt;&sol;form&gt;</code>
+</section>
+<section> 
+Sign Up
+
+<form action="/submit" method="post">
+
+<fieldset>
+
+<legend>Sign Up</legend>
+
+<label for="name">Name:</label>
+
+<input type="text" id="name" name="name" required>
+
+<label for="email">Email:</label>
+
+<input type="email" id="email" name="email" required>
+
+<label for="password">Password:</label>
+
+<input type="password" id="password" name="password" required>
+
+<label>Gender:</label><br>
+
+<input type="radio" name="gender" value="male"> Male
+
+<input type="radio" name="gender" value="female"> Female
+
+<label for="country">Country:</label>
+
+<select id="country" name="country">
+
+<option value="us">United States</option>
+
+<option value="uk">United Kingdom</option>
+
+<option value="ca">Canada</option>
+
+</select>
+
+<input type="checkbox" name="terms" required> I accept the terms and conditions
+
+<button type="submit">Register</button>
+
+</fieldset>
+
+</form>
+</section>
+<section>
+<h2>input types list</h2>
+
+<p><code>text</code> &minus; Single&ndash;line text input.<br>
+    <br>
+<code>password</code> &minus; Hidden text input for passwords.<br>
+<br>
+<code>email</code> &minus; Input for email addresses with validation.<br>
+<br>
+<code>number</code> &minus; Numeric input with optional step control.<br>
+<br>
+<code>tel</code> &minus; Input for telephone numbers.<br>
+<br>
+<code>url</code> &minus; Input for website URLs with validation.<br>
+<br>
+<code>search</code> &minus; Search box input.<br>
+<br>
+<code>color</code> &minus; Color picker input.<br>
+<br>
+<code>date</code> &minus; Input for selecting a date.<br>
+<br>
+<code>datetime&ndash;local</code> &minus; Input for date and time (local).<br>
+<br>
+<code>month</code> &minus; Input for selecting a month and year.<br>
+<br>
+<code>week</code> &minus; Input for selecting a week of the year.<br>
+<br>
+<code>time</code> &minus; Input for selecting a time.<br>
+<br>
+<code>file</code> &minus; Input for file uploads.<br>
+<br>
+<code>checkbox</code> &minus; Multi&ndash;select checkbox input.<br>
+<br>
+<code>radio</code> &minus; Single&ndash;choice radio button.<br>
+<br>
+<code>range</code> &minus; Slider input for selecting a range value.<br>
+<br>
+<code>hidden</code> &minus; Invisible input field for storing data.<br>
+<br>
+<code>image</code> &minus; Submit button with an image.<br>
+<br>
+<code>submit</code> &minus; Button to submit the form.<br>
+<br>
+<code>reset</code> &minus; Button to reset form fields.<br>
+<br>
+<code>button</code> &minus; General&ndash;purpose button input.</p>
+</section>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>iframe</title>
+        <link rel="stylesheet" href="html_reference.css">
+        </head>
+        <body>
+            <nav>
+                <a href="skylard_paragraph.html">Text</a><br>
+                <a href="skylard_headline.html">Headlines</a><br>
+                <a href="skylard_lists.html">Lists</a><br>
+                <a href="skylard_anchor.html">Anchor</a><br>
+                <a href="skylard_images.html">Images</a><br>
+                <a href="skylard_svg.html">SVG</a><br>
+                <a href="skylard_iframe.html">Iframe</a><br>
+                <a href="skylard_video.html">Video</a><br>
+                <a href="skylard_audio.html">Audio</a><br>
+                <a href="skylard_forms.html">Forms</a><br>
+                <a href="skylard_tables.html">Tables</a><br>
+            </nav>
+    <section> 
+    <h1>HTML <code>&lt;iframe&gt;</code> Tag</h1>
+<p>
+    The HTML <code>&lt;iframe&gt;</code> (Inline Frame) tag is used to embed another webpage or external content within a web<br>
+    page. It is commonly used for embedding videos, maps, external websites, and interactive widgets.
+</p>
+</section>
+<section> 
+    <h2>Basic Syntax</h2>
+
+    <code>&lt;iframe src="https://example.com" width="600" height="400"&gt;&lt;/iframe&gt;</code>
+    
+    <h3>Explanation:</h3>
+
+<ul>
+    <li><code>&lt;iframe&gt;</code> &minus; Defines the inline frame container.
+        <li><code>src</code> &minus; Specifies the URL of the content to be embedded.
+            <li><code>width & height</code> &minus; Define the size of the iframe.
+</ul>
+</section>
+<section> 
+    <h2>Common Attributes</h2>
+
+<p>
+    <code>src</code> - Specifies the URL of the embedded content.<br>
+    <br>
+    <code>&lt;iframe src="https://example.com"&gt;</code><br>
+    <br>
+    <code> width & height</code> - Defines the frame size (in pixels or percentage).<br>
+    <br>
+    <code>&lt;iframe width="800" height="600"&gt;</code><br>
+    <br>
+    <code>frameborder</code> - Specifies whether the iframe has a border (0 removes it).<br>
+    <br>
+    <code>&lt;iframe frameborder="0"&gt;</code><br>
+    <br>
+    <code>allowfullscreen</code> - Enables fullscreen mode for videos.<br>
+    <br>
+    <code>&lt;iframe allowfullscreen&gt;</code><br>
+    <br>
+    <code>loading</code> - Controls how the iframe loads (lazy defers loading).<br>
+    <br>
+    <code>&lt;iframe loading="lazy"&gt;</code><br>
+    <br>
+    <code>referrerpolicy</code> - Controls referrer information sharing.<br>
+    <br>
+    <code>&lt;iframe referrerpolicy="no-referrer"&gt;</code><br>
+    <br>
+    <code>sandbox</code> - Restricts iframe permissions for security.<br>
+    <br>
+    <code>&lt;iframe sandbox&gt;</code>
+</p>
+ </section>
+<section> 
+<h2>Embedding Videos with <code>&lt;iframe&gt;</code></h2>
+
+    <h3>Embedding a YouTube Video</h3>
+
+    <code>
+    &lt;iframe width="560" height="315"
+    src="https://www.youtube.com/embed/dQw4w9WgXcQ"<br>
+    frameborder="0"
+    allowfullscreen&gt;
+    &lt;/iframe&gt;
+    </code>
+    
+    <h4>Key Features:</h4>
+<ul>
+    <li>Uses /embed/ instead of /watch?v=.
+    <li>frameborder="0" removes the default border.
+    <li>allowfullscreen enables fullscreen playback.
+</ul>
+</section>
+<section> 
+    <h3>Embedding a Vimeo Video</h3>
+<code>
+    &lt;iframe src="https://player.vimeo.com/video/123456789"
+    width="640" height="360"<br>
+    frameborder="0"
+    allow="autoplay; fullscreen"
+    allowfullscreen&gt;
+    &lt;/iframe&gt;
+</code>
+    
+<h4>Additional Attribute:</h4>
+
+<code>
+    allow="autoplay; fullscreen" &minus; Enables autoplay and fullscreen.
+    Embedding Google Maps
+    &lt;iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151..."
+    width="600"<br>
+     height="450"
+    style="border:0;"
+    allowfullscreen&gt;
+    &lt;/iframe&gt;
+</code>
+<p>Use Case: Displays an interactive Google Map.</p>
+ </section>
+<section> 
+<h3>Security Considerations (sandbox Attribute)</h3>
+
+    <p>For security reasons, embedding external content can be risky. The sandbox attribute restricts iframe permissions.</p>
+    
+    <code>&lt;iframe src="https://example.com" sandbox&gt;&lt;/iframe&gt;</code>
+    
+    <h4>Common Sandbox Values:</h4>
+
+<ul>
+    <li>sandbox="allow-scripts" &minus; Allows scripts to run inside the iframe.
+    <li>sandbox="allow-forms" &minus; Enables form submissions inside the iframe.
+</ul>
+</section>
+<section> 
+    <h3>Example: Full Iframe Implementation</h3>
+<code>
+    &lt;iframe src="https://example.com" width="800" height="600" frameborder="0" loading="lazy"<br> referrerpolicy="no-referrer"&gt;\
+    Your browser does not support iframes.
+    &lt;/iframe&gt;
+</code>
+ </section>
+
+<section> 
+    <h2>Summary</h2>
+<p>
+    <code>&lt;iframe&gt;</code> - Defines an inline frame for embedding external content.<br>
+    <br>
+    <code>src</code> - Specifies the content URL.<br>
+    <br>
+    <code>allowfullscreen</code> - Enables fullscreen mode for videos.<br>
+    <br>
+    <code>sandbox</code> - Restricts iframe permissions for security.<br>
+    </p>
+    </section>
+</p>
+</body>
+</html>

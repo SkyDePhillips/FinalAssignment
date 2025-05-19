@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>svg</title>
+        <link rel="stylesheet" href="html_reference.css">
+        </head>
+        <body>
+            <nav>
+                <a href="skylard_paragraph.html">Text</a><br>
+                <a href="skylard_headline.html">Headlines</a><br>
+                <a href="skylard_lists.html">Lists</a><br>
+                <a href="skylard_anchor.html">Anchor</a><br>
+                <a href="skylard_images.html">Images</a><br>
+                <a href="skylard_svg.html">SVG</a><br>
+                <a href="skylard_iframe.html">Iframe</a><br>
+                <a href="skylard_video.html">Video</a><br>
+                <a href="skylard_audio.html">Audio</a><br>
+                <a href="skylard_forms.html">Forms</a><br>
+                <a href="skylard_tables.html">Tables</a><br>
+            </nav>
+<section>
+<h1><code>&lt;svg&gt;</code> The SVG (Scalable Vector Graphics) Tag</h1>
+
+    <p>The HTML &lt;svg&gt; tag is used to create vector graphics directly within an HTML document. Unlike raster<br> 
+        images (e.g., JPEG, PNG), SVG graphics are resolution&minus;independent and can scale without losing quality. <br>
+        They are commonly used for icons, charts, illustrations, and interactive graphics.
+    </p>
+</section>
+<section> 
+    <h2>Basic Syntax</h2>
+    
+    <code>&lt;svg width="200" height="100"&gt;<br>
+    
+    &lt;rect width="200" height="100" fill="blue" /&gt;<br>
+    
+    &lt;/svg&gt;
+</code>
+</section>  
+<section> 
+    <h3>Explanation:</h3>
+    
+<p>
+    <code>&lt;svg&gt;</code> &minus; Defines the SVG container.<br>
+    <br>
+    <code>&lt;rect&gt;</code> &minus; Draws a rectangle.<br>
+    <br>
+    <code>width & height</code> &minus; Set the size of the SVG and its elements.<br>
+    <br>
+    <code>fill</code> &minus; Defines the color of the shape.
+</p>
+</section>
+<section> 
+    <h2>Commonly Used SVG Elements</h2>
+    
+    <p>SVG graphics consist of various shape and path elements:</p>
+    
+    <code>
+
+    <h3><code>&lt;circle&gt;</code> &minus; Draws a Circle</h3>
+    &lt;svg width="200" height="200"&gt;<br>
+    
+    &lt;circle cx="100" cy="100" r="50" fill="red" /&gt;<br>
+    
+    &lt;/svg&gt;
+</code>
+    
+    <ul>
+    <li><code>cx, cy</code> &minus; Define the circle's center position.
+    <li><code>r</code> &minus; Specifies the radius.
+    <li><code>fill</code> &minus; Sets the color.
+    </ul>
+    <h3><code>&lt;rect&gt;</code> &minus; Draws a Rectangle</h3>>
+   
+    
+    <code>
+    &lt;svg width="200" height="200"&gt;<br>
+    
+    &lt;rect x="20" y="20" width="100" height="50" fill="green" /&gt;<br>
+    
+    &lt;/svg&gt;
+</code>
+    
+<ul>
+    <li><code>x, y</code> &minus; Position the rectangle.
+    
+    <li><code>width, height</code> &minus; Define size.
+</ul>    
+    <h3><code>&lt;line&gt;</code> &minus; Draws a Straight Line</h3>
+
+    
+    <code>
+         &lt;svg width="200" height="200"&gt;<br>
+         &lt;line x1="10" y1="10" x2="190" y2="10" stroke="black" stroke&minus;width="2"/&gt;<br>
+         &lt;/svg&gt;
+    </code>
+    
+    <ul>
+    <li><code>x1, y1 & x2, y2 </code>&minus; Define start and end points.
+    <li><code>stroke </code>&minus; Sets line color.
+    <li><code>stroke</code>&minus;width &minus; Defines line thickness.
+</ul>
+    <h3><code>&lt;polygon&gt; </code>&minus; Draws a Polygon</h3>
+    
+    <code>
+    &lt;svg width="200" height="200"&gt;<br>
+    
+    &lt;polygon points="50,10 90,90 10,90" fill="orange"/&gt;<br>
+    
+    &lt;/svg&gt;
+</code>
+    
+<p>
+    <code>points </code>&minus; Defines coordinates of each vertex.<br>
+    <br>
+    <h3><code>&lt;ellipse&gt;</code> &minus; Draws an Ellipse</h3>
+</p>
+    
+    <code>
+    &lt;svg width="200" height="200"&gt;<br>
+    
+    &lt;ellipse cx="100" cy="50" rx="80" ry="30" fill="purple"/&gt;<br>
+    
+    &lt;/svg&gt;
+</code>
+    <ul>
+   <li><code>cx, cy </code>&minus; Define center position.
+<li><code>rx, ry </code>&minus; Set horizontal and vertical radii.
+    </ul>
+</section>
+<section> 
+    <h3><code>&lt;path&gt; </code>&minus; Custom Paths</h3>
+    
+    <code>
+    &lt;svg width="200" height="200"&gt;<br>
+    
+    &lt;path d="M10 80 C40 10, 65 10, 95 80 S150 150, 180 80" stroke="black" fill="transparent"/&gt;<br>
+    
+    &lt;/svg&gt;
+    </code>
+    
+    <p><code>d</code> &minus; Defines the path using commands like M (Move), C (Curve), L (Line), and S (Smooth curve).</p>
+</section>
+    <section> 
+    <h2>Text in SVG <code>(&lt;text&gt; and &lt;tspan&gt;)</code></h2>
+    
+   <p>SVG allows text rendering inside graphics.</p>
+    
+    
+    
+    <h3><code>&lt;text&gt;</code> &minus; Adding Text</h3>
+    <code>&lt;svg width="200" height="100"&gt;<br>
+    
+    &lt;text x="10" y="50" font&minus;size="20" fill="black"&gt;Hello SVG&lt;/text&gt;<br>
+    
+    &lt;/svg&gt;
+    </code>
+    
+    <p>
+
+    <code>x, y</code> &minus; Position the text. font&minus;size &minus; Sets the text size.<br>
+    <br>
+    <h3><code>&lt;tspan&gt;</code> &minus; Multi&minus;line or Styled Text</h3>
+</p>
+    <code>
+    &lt;svg width="200" height="100"&gt;<br>
+    
+    &lt;text x="10" y="50" font&minus;size="20"&gt;<br>
+    
+    &lt;tspan fill="red"&gt;Red&lt;/tspan&gt; and<br>
+    
+    &lt;tspan fill="blue"&gt;Blue&lt;/tspan&gt; Text<br>
+    
+    &lt;/text&gt;<br>
+    
+    &lt;/svg&gt;
+</code>
+    
+    <p>&lt;tspan&gt; allows styling specific text portions.</p>
+    </section>
+    <section> 
+    <h2>Styling and Animation</h2>
+    
+    <p>SVG elements can be styled with CSS or animated.</p>
+    
+    <h3>CSS Styling</h3>
+    
+    <code>
+    &lt;style&gt;<br>
+    
+    .circle { fill: yellow; stroke: black; stroke&minus;width: 3; }<br>
+    
+    &lt;/style&gt;
+</code>
+    
+     
+    <code>
+    &lt;svg width="200" height="200"&gt;<br>
+    
+    &lt;circle cx="100" cy="100" r="50" class="circle"/&gt;<br>
+    
+    &lt;/svg&gt;
+</code>
+ </section>   
+<section> 
+    <h2>Animation with <code>&lt;animate&gt;</h2>code></h2>
+    <code>
+    &lt;svg width="200" height="200"&gt;<br>
+    
+    &lt;circle cx="50" cy="50" r="20" fill="blue"&gt;<br>
+    
+    &lt;animate attributeName="cx" from="50" to="150" dur="2s" repeatCount="indefinite"/&gt;<br>
+    
+    &lt;/circle&gt;<br>
+    
+    &lt;/svg&gt;
+</code>
+    
+    <p>attributeName &minus; Defines the attribute to animate. from, to &minus; Sets start and end values. dur &minus; Duration of animation. repeatCount="indefinite" &minus;<br>
+         Loops animation.
+    </p>
+</section>
+    <section> 
+    <h2>Embedding External SVG Files</h2>
+    
+    <p>SVG files can be embedded using <code>&lt;img&gt;</code> or <code>&lt;iframe&gt;</code>.<br>
+        <br>
+    Using <code>&lt;img&gt;</code><br>
+    <br>
+    <code>&lt;img src="graphic.svg" width="200" height="200" alt="SVG Graphic"&gt;</code><br>
+    <br>
+    Using <code>&lt;iframe&gt;</code><br>
+    <br>
+    <code>&lt;iframe src="graphic.svg" width="200" height="200"&gt;&lt;/iframe&gt;</code>
+</p>
+    
+</section>
+<section> 
+    <h2>Summary</h2>
+<p>
+    <code>&lt;svg&gt;</code> &minus; Defines the SVG container.<br>
+    <br>
+    <code>&lt;circle&gt;</code> &minus; Draws a circle.<br>
+    <br>
+    <code>&lt;rect&gt;</code> &minus; Creates a rectangle.<br>
+    <br>
+    <code>&lt;line&gt;</code> &minus; Draws a line.<br>
+    <br>
+    <code>&lt;polygon&gt;</code> &minus; Defines a polygon shape.<br>
+    <br>
+    <code>&lt;ellipse&gt;</code> &minus; Creates an ellipse.<br>
+    <br>
+    <code>&lt;path&gt;</code> &minus; Draws custom shapes using path data.<br>
+    <br>
+    <code>&lt;text&gt; </code>&minus; Adds text inside SVG.<br>
+    <br>
+    <code>&lt;tspan&gt; </code>&minus; Styles text within &lt;text&gt;.<br>
+    <br>
+    <code>&lt;animate&gt;</code> &minus; Adds animation to SVG elements.<br>
+</p>
+</section>
+    </body>
+    </html>

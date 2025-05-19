@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>video</title>
+        <link rel="stylesheet" href="html_reference.css">
+        </head>
+        <body>
+            <nav>
+                <a href="skylard_paragraph.html">Text</a><br>
+                <a href="skylard_headlinerawcontent.html">Headlines</a><br>
+                <a href="skylard_lists.html">Lists</a><br>
+                <a href="skylard_anchor.html">Anchor</a><br>
+                <a href="skylard_images.html">Images</a><br>
+                <a href="skylard_svg.html">SVG</a><br>
+                <a href="skylard_iframe.html">Iframe</a><br>
+                <a href="skylard_video.html">Video</a><br>
+                <a href="skylard_audio.html">Audio</a><br>
+                <a href="skylard_forms.html">Forms</a><br>
+                <a href="skylard_tables.html">Tables</a><br>
+            </nav>
+
+<section> 
+        <h1>HTML <code>&lt;video&gt;</code> Tag</h1>
+    <p>
+        The HTML <code>&lt;video&gt;</code> tag is used to embed video content into a web page. It provides a way to play videos<br>
+        without requiring third-party plugins like Flash. The <code>&lt;video&gt;</code> element supports multiple formats and includes<br>
+        controls for playback.
+     </p>
+</section>
+<section> 
+    <h2>Basic Syntax</h2>
+
+<code>
+    &lt;video width="600" height="400" controls&gt;<br>
+    &lt;source src="video.mp4" type="video/mp4"&gt;<br>
+    &lt;source src="video.ogg" type="video/ogg"&gt;<br>
+    Your browser does not support the video tag.<br>
+    &lt;/video&gt;
+</code>
+    <h3>Explanation:</h3>
+
+<ul>
+    <li><code>&lt;video&gt;</code> - Defines the video container.
+    <li><code>&lt;source&gt;</code> - Specifies multiple video file formats for browser compatibility.
+    <li><strong>Fallback Text</strong> - Displayed if the browser does not support the <code>&lt;video&gt;</code> tag.
+</ul>
+</section>
+<section> 
+    <h2>Common <code>&lt;video&gt;</code> Attributes</h2>
+<p>
+    <code>src</code> - Defines the video file location.<br>
+    <br>
+    <code> &lt;video src="video.mp4"&gt;<br></code>
+    <br>
+    <code></code>controls</code> - Adds built-in play, pause, volume, etc.<br>
+    <br>
+    <code></code>&lt;video controls&gt;<br></code>
+    <br>
+    <code></code>autoplay</code> - Starts playing the video automatically.<br>
+    <br>
+    <code> &lt;video autoplay&gt;<br></code>
+    <br>
+    <code></code>loop</code> - Replays the video continuously.<br>
+    <br>
+    <code></code>&lt;video loop&gt;<br></code>
+    <br>
+    <code></code>muted</code> - Starts the video with no sound.<br>
+    <br>
+    <code></code>&lt;video muted&gt;<br></code>
+    <br>
+    <code></code>poster</code> - Displays an image before the video starts.<br>
+    <br>
+    <code> &lt;video poster="thumbnail.jpg"&gt;<br></code>
+    <br>
+    <code></code>preload</code> - Controls how the video is loaded. Options: auto, metadata, none.<br>
+    <br>
+    <code></code>&lt;video preload="metadata"&gt;<br></code>
+    <br>
+    <code>width & height</code> - Sets the video dimensions.<br>
+    <br>
+    <code> &lt;video width="640" height="360"&gt;</code>
+</p>
+ </section>   
+<section> 
+    <h2>Adding Multiple Video Formats</h2>
+
+    <p>Not all browsers support the same video formats, so providing multiple sources ensures compatibility.</p>
+    
+<code>
+    &lt;video controls&gt;<br>
+    &lt;source src="video.mp4" type="video/mp4"&gt;<br>
+    &lt;source src="video.ogg" type="video/ogg"&gt;<br>
+    &lt;source src="video.webm" type="video/webm"&gt;<br>
+    Your browser does not support the video tag.<br>
+    &lt;/video&gt;
+</code>
+    
+<h3>Formats Supported by Browsers:</h3>
+
+<ul>
+    <li>MP4 <code>(video/mp4)</code> - Best supported across modern browsers.
+    <li>WebM <code>(video/webm)</code> - Smaller file size, good quality.
+    <li>Ogg <code>(video/ogg)</code> - Open-source alternative.
+</ul>
+ </section>
+<section> 
+<h2>Adding Captions and Subtitles</h2>
+    
+<p>Use &lt;track&gt; to provide captions for accessibility.</p>
+    
+<code>
+    &lt;video controls&gt;<br>
+    &lt;source src="video.mp4" type="video/mp4"&gt;<br>
+    &lt;track src="captions.vtt" kind="subtitles" srclang="en" label="English"&gt;<br>
+    &lt;/video&gt;
+</code>
+    
+<h3>Attributes for &lt;track&gt;:</h3>
+<ul>
+    <li>src - Link to the caption file (.vtt).
+    <li>kind - Defines the track type (subtitles, captions).
+    <li>srclang - Specifies the language of the subtitles.
+    <li>label - Describes the subtitle option.
+</ul>
+</section>
+<section> 
+    <h2>Example: Full Video Implementation</h2>
+<code>
+    &lt;video width="640" height="360" controls poster="preview.jpg" preload="metadata"&gt;<br>
+    &lt;source src="movie.mp4" type="video/mp4"&gt;<br>
+    &lt;source src="movie.ogg" type="video/ogg"&gt;<br>
+    &lt;track src="subtitles.vtt" kind="subtitles" srclang="en" label="English"&gt;<br>
+    Your browser does not support the video tag.<br>
+    &lt;/video&gt;
+</code>
+</section>
+<section> 
+    <h2>Summary</h2>
+<p>
+    <code>&lt;video&gt;</code> - Defines a video container.<br>
+    <br>
+    <code>&lt;source&gt;</code> - Provides multiple video formats for compatibility.<br>
+    <br>
+    <code>&lt;track&gt;</code> - Adds captions/subtitles for accessibility.
+</p>
+</section>
+</body>
+</html>

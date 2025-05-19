@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>images</title>
+        <link rel="stylesheet" href="html_reference.css">
+        </head>
+        <body>
+            <nav>
+                <a href="skylard_paragraph.html">Text</a><br>
+                <a href="skylard_headline.html">Headlines</a><br>
+                <a href="skylard_lists.html">Lists</a><br>
+                <a href="skylard_anchor.html">Anchor</a><br>
+                <a href="skylard_images.html">Images</a><br>
+                <a href="skylard_svg.html">SVG</a><br>
+                <a href="skylard_iframe.html">Iframe</a><br>
+                <a href="skylard_video.html">Video</a><br>
+                <a href="skylard_audio.html">Audio</a><br>
+                <a href="skylard_forms.html">Forms</a><br>
+                <a href="skylard_tables.html">Tables</a><br>
+            </nav>
+<section> 
+<h1><code>&lt;img&gt;</code></h1>
+
+<h1>The image tag</h1>
+
+<p>The HTML <code>&lt;img&gt;</code> tag is used to embed images in a web page. It is a self-closing (void) element, meaning it<br>
+does not have a closing tag. The <code>&lt;img&gt;</code> tag is essential for adding visual content to web pages and supports<br>
+various attributes for customization.</p>
+</section>
+<section> 
+<h2>basic syntax</h2>
+
+<code>&lt;img src&equals;&quot;image.jpg&quot; alt&equals;&quot;Description of the image&quot;&gt;</code>
+<li>src (Source)&colon; Specifies the image file location (URL or relative path).
+<li>alt (Alternative text)&colon; Provides descriptive text if the image fails to load, improving accessibility and<br>
+SEO.
+</section>
+<section> 
+<h2>Common Attributes of the <code>&lt;img&gt;</code> Tag</h2>
+
+<h3>Setting Image Dimensions</h3>
+
+<p>You can define the width and height in pixels or percentages.</p>
+
+<code>&lt;img src&equals;&quot;photo.jpg&quot; alt&equals;&quot;A scenic view&quot; width&equals;&quot;300&quot; height&equals;&quot;200&quot;&gt;</code>
+
+<p><em>Best practice&colon; Use CSS (max-width&colon; 100&percnt;) instead of fixed widths to make images responsive.</em></p>
+</section>
+<section> 
+<h3>Responsive Images with srcset</h3>
+
+<p>The srcset attribute allows browsers to load different images based on screen size, improving performance.</p>
+
+<code>&lt;img src&equals;&quot;default.jpg&quot; srcset&equals;&quot;small.jpg 480w, medium.jpg 1024w, large.jpg 1920w&quot; sizes&equals;&quot;
+(max-width&colon; 600px) 480px, (max-width&colon; 1200px) 1024px, 1920px&quot; alt&equals;&quot;A mountain landscape&quot;&gt;</code>
+
+<p><em>The browser selects the best image based on device resolution.</em></p>
+</section>
+<section> 
+<h3>Using loading&equals;&quot;lazy&quot; for Performance</h3>
+
+<p>The loading&equals;&quot;lazy&quot; attribute defers image loading until it's needed, improving page speed.</p>
+
+<code>&lt;img src&equals;&quot;nature.jpg&quot; alt&equals;&quot;Beautiful nature&quot; loading&equals;&quot;lazy&quot;&gt;</code>
+</section>
+<section> 
+<h3>Making Images Clickable</h3>
+
+<p>You can wrap an <code>&lt;img&gt;</code> inside an <code>&lt;a&gt;</code> tag to create a clickable image.</p>
+
+<code>&lt;a href&equals;&quot;https&colon;&sol;&sol;example.com&quot;&gt;</code><br>
+
+<code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src&equals;&quot;logo.png&quot; alt&equals;&quot;Company Logo&quot;&gt;<br>
+&lt;&sol;a&gt;</code>
+</section>
+<section> 
+<h3>Using title for Tooltip</h3>
+
+<p>The title attribute displays a tooltip when hovering over the image.</p>
+
+<code>&lt;img src&equals;&quot;icon.png&quot; alt&equals;&quot;Settings icon&quot; title&equals;&quot;Click for settings&quot;&gt;</code>
+</section>
+</body>
+</html>

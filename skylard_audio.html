@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>audio</title>
+        <link rel="stylesheet" href="html_reference.css">
+        </head>
+        <body>
+            <nav>
+                <a href="skylard_paragraph.html">Text</a><br>
+                <a href="skylard_headline.html">Headlines</a><br>
+                <a href="skylard_lists.html">Lists</a><br>
+                <a href="skylard_anchor.html">Anchor</a><br>
+                <a href="skylard_images.html">Images</a><br>
+                <a href="skylard_svg.html">SVG</a><br>
+                <a href="skylard_iframe.html">Iframe</a><br>
+                <a href="skylard_video.html">Video</a><br>
+                <a href="skylard_audio.html">Audio</a><br>
+                <a href="skylard_forms.html">Forms</a><br>
+                <a href="skylard_tables.html">Tables</a><br>
+            </nav>
+<section>
+<h1>HTML <code>&lt;audio&gt;</code> Tag</h1>
+ <p>
+      The HTML <code>&lt;audio&gt;</code> tag is used to embed audio files in a web page, allowing users to play sounds, music, or<br>
+    voice recordings directly in their browser. It supports multiple formats and can include built-in playback<br>
+    controls.
+</p>
+</section>
+<section>
+<h2>Basic Syntax</h2>
+
+<code>
+    &lt;audio controls&gt;<br>
+    &lt;source src="audio.mp3" type="audio/mpeg"&gt;<br>
+    &lt;source src="audio.ogg" type="audio/ogg"&gt;<br>
+    Your browser does not support the audio element.<br>
+    &lt;/audio&gt;
+</code>
+</section>
+ <section>   
+<h3>Explanation:</h3>
+
+<p>
+    <code>&lt;audio&gt;</code> &minus; Defines the audio player.<br>
+    <br>
+    <code>&lt;source&gt;</code> &minus; Specifies the audio file with different formats for compatibility.<br>
+    <br>
+    <strong>Fallback Text</strong> &minus; Displays if the browser does not support the &lt;audio&gt; tag.
+</p>
+</section>
+ <section>  
+<h2>Common <code>&lt;audio&gt;</code> Attributes</h2>
+<p>
+    <code></code>src </code>- Defines the audio file location (alternative to &lt;source&gt;).<br>
+    <br>
+    <code>&lt;audio src="audio.mp3"&gt;</code><br>
+    <br>
+    <code>controls</code> - Displays built-in audio controls (play, pause, volume).<br>
+    <br>
+    <code> &lt;audio controls&gt;</code><br>
+    <br>
+    <code>autoplay </code>- Starts playing the audio automatically.<br>
+    <br>
+    <code>&lt;audio autoplay&gt;</code><br>
+    <br>
+    <code>loop </code>- Repeats the audio indefinitely.<br>
+    <br>
+    <code>&lt;audio loop&gt;</code><br>
+    <br>
+    <code>muted </code>- Starts the audio with sound muted.<br>
+    <br>
+    <code>&lt;audio muted&gt;<br></code>
+    <br>
+    <code>preload </code>- Defines how the audio is loaded before playback (auto, metadata, none).<br>
+    <br>
+    <code>&lt;audio preload="metadata"&gt;</code>
+</p>
+</section>
+<section>
+    <h2>Adding Multiple Audio Formats</h2>
+    
+    <p>Different browsers support different audio formats. Providing multiple sources ensures wider compatibility.</p>
+    
+<code>
+    &lt;audio controls&gt;<br>
+    &lt;source src="audio.mp3" type="audio/mpeg"&gt;<br>
+    &lt;source src="audio.ogg" type="audio/ogg"&gt;<br>
+    Your browser does not support the audio element.<br>
+    &lt;/audio&gt;
+</code>
+ </section> 
+ <section> 
+<h3>Common Audio Formats:</h3>
+
+<p>
+    MP3 <code>(audio/mpeg)</code> &minus; Most widely supported.<br>
+    <br>
+    Ogg <code>(audio/ogg)</code> &minus; Open-source format.<br>
+    <br>
+    WAV <code>(audio/wav)</code> &minus; High quality but large file size.
+</p>
+</section>
+<section>
+<h2>Example: Full Audio Implementation</h2>
+<code>
+    &lt;audio controls preload="metadata"&gt;<br>
+    &lt;source src="music.mp3" type="audio/mpeg"&gt;<br>
+    &lt;source src="music.ogg" type="audio/ogg"&gt;<br>
+    Your browser does not support the audio element.<br>
+    &lt;/audio&gt;
+</code>
+</section>
+<section>
+    <h2>Summary</h2>
+
+<p>
+    <code>&lt;audio&gt;</code> - Defines an audio player.<br>
+    <br>
+    <code>&lt;source&gt;</code> - Provides multiple audio formats for compatibility.
+</p>
+</section>
+</body>
+</html>

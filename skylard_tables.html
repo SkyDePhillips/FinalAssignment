@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>tables</title>
+        <link rel="stylesheet" href="html_reference.css">
+        </head>
+        <body>
+            <nav>
+                <a href="skylard_paragraph.html">Text</a><br>
+                <a href="skylard_headline.html">Headlines</a><br>
+                <a href="skylard_lists.html">Lists</a><br>
+                <a href="skylard_anchor.html">Anchor</a><br>
+                <a href="skylard_images.html">Images</a><br>
+                <a href="skylard_svg.html">SVG</a><br>
+                <a href="skylard_iframe.html">Iframe</a><br>
+                <a href="skylard_video.html">Video</a><br>
+                <a href="skylard_audio.html">Audio</a><br>
+                <a href="skylard_forms.html">Forms</a><br>
+                <a href="skylard_tables.html">Tables</a><br>
+            </nav>
+<section> 
+<h1><code>&lt;table&gt;</code></h1>
+
+<h1>the table Tag</h1>
+
+<p>HTML <code>&lt;table&gt;</code> tag is used to create structured tables for displaying data in rows and columns. It helps<br>
+organize content in a grid format, making it easier to present tabular information.</p>
+</section>
+<section> 
+<h2>Basic Syntax</h2>
+
+<code>&lt;table&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Header 1&lt;&sol;th&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Header 2&lt;&sol;th&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&lt;&sol;tr&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row 1, Column 1&lt;&sol;td&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row 1, Column 2&lt;&sol;td&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&lt;&sol;tr&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row 2, Column 1&lt;&sol;td&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row 2, Column 2&lt;&sol;td&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&lt;&sol;tr&gt;<br>
+
+&lt;&sol;table&gt;</code>
+
+<h4>Explanation&colon;</h4>
+
+<p><code>&lt;table&gt;</code>&colon; Defines the table.<br>
+<br>
+<code>&lt;tr&gt;</code> (Table Row)&colon; Represents a row in the table.<br>
+<br>
+<code>&lt;th&gt;</code> (Table Header)&colon; Defines a header cell (bold & centered by default).<br>
+<br>
+<code>&lt;td&gt;</code> (Table Data)&colon; Defines a standard data cell.</p>
+</section>
+<section> 
+<h2>Common Table Tags and Attributes</h2>
+
+<h3><code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, and <code>&lt;tfoot&gt;</code> &minus; Table Structure</h3>
+
+<p>These tags group table content for better organization and accessibility.</p>
+
+<code>&lt;table&gt;<br>
+
+    &nbsp;&nbsp;&nbsp;&lt;thead&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Product&lt;&sol;th&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Price&lt;&sol;th&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;&sol;tr&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&lt;&sol;thead&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&lt;tbody&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Apple&lt;&sol;td&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;$1&lt;&sol;td&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;&sol;tr&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Banana&lt;&sol;td&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;$0.50&lt;&sol;td&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;&sol;tr&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&lt;&sol;tbody&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&lt;tfoot&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Total&lt;&sol;td&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;$1.50&lt;&sol;td&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;&sol;tr&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&lt;&sol;tfoot&gt;<br>
+
+&lt;&sol;table&gt;</code>
+</section>
+<section> 
+<h3><code>colspan</code> and <code>rowspan</code> &minus; Merging Cells</h3>
+
+<p>These attributes merge multiple columns or rows into one.</p>
+
+<h3>colspan (Column Span) &minus; Merges cells horizontally.</h3>
+
+<code>&lt;tr&gt;<br>
+
+    &nbsp;&nbsp;&nbsp;&lt;td colspan&equals;"2"&gt;Merged Columns&lt;&sol;td&gt;<br>
+
+&lt;&sol;tr&gt;</code>
+
+<h3>rowspan (Row Span) &minus; Merges cells vertically.</h3>
+
+<code>&lt;tr&gt;<br>
+
+    &nbsp;&nbsp;&nbsp;&lt;td rowspan&equals;"2"&gt;Merged Rows&lt;&sol;td&gt;<br>
+
+    &nbsp;&nbsp;&nbsp;&lt;td&gt;Row 1&lt;&sol;td&gt;<br>
+
+&lt;&sol;tr&gt;<br>
+
+&lt;tr&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&lt;td&gt;Row 2&lt;&sol;td&gt;<br>
+
+&lt;&sol;tr&gt;</code>
+
+<h3><code>&lt;caption&gt;</code> &minus; Table Title</h3>
+
+<p>The <code>&lt;caption&gt;</code> tag provides a title for the table.</p>
+
+<code>&lt;table&gt;<br>
+
+    &nbsp;&nbsp;&nbsp;&lt;caption&gt;Product Price List&lt;&sol;caption&gt;<br>
+
+    &nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Item&lt;&sol;th&gt;<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Price&lt;&sol;th&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&lt;&sol;tr&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Notebook&lt;&sol;td&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;$5&lt;&sol;td&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&lt;&sol;tr&gt;<br>
+
+&lt;&sol;table&gt;</code>
+</section>
+<section> 
+<h3>4. <code>&lt;colgroup&gt;</code> and <code>&lt;col&gt;</code> &minus; Column Styling</h3>
+
+<p>These tags allow you to style specific columns.</p>
+
+<code>&lt;table&gt;<br>
+
+    &nbsp;&nbsp;&nbsp;&lt;colgroup&gt;<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;col style&equals;"background-color&colon; lightgray;"&gt;<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;col style&equals;"background-color&colon; white;"&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&lt;&sol;colgroup&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Item&lt;&sol;th&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Price&lt;&sol;th&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&lt;&sol;tr&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Pen&lt;&sol;td&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;$1&lt;&sol;td&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&lt;&sol;tr&gt;<br>
+
+&lt;&sol;table&gt;</code>
+
+<h3>Example&colon; Full Table with Styling</h3>
+
+<code>&lt;table border&equals;"1" cellpadding&equals;"5" cellspacing&equals;"0"&gt;<br>
+
+    &nbsp;&nbsp;&nbsp;&lt;caption&gt;Employee Details&lt;&sol;caption&gt;<br>
+
+    &nbsp;&nbsp;&nbsp;&lt;thead&gt;<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Name&lt;&sol;th&gt;<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Department&lt;&sol;th&gt;<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Salary&lt;&sol;th&gt;<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;&sol;tr&gt;<br>
+
+    &nbsp;&nbsp;&nbsp;&lt;&sol;thead&gt;<br>
+
+    &nbsp;&nbsp;&nbsp;&lt;tbody&gt;<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;John Doe&lt;&sol;td&gt;<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;IT&lt;&sol;td&gt;<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;$5000&lt;&sol;td&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&lt;&sol;tr&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Jane Smith&lt;&sol;td&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;HR&lt;&sol;td&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;$4500&lt;&sol;td&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&lt;&sol;tr&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&lt;&sol;tbody&gt;<br>
+
+&lt;&sol;table&gt;</code>
+</section>
+<section> 
+<h2>Additional Attributes&colon;</h2>
+
+<p><code>border</code> &minus; Adds a border around the table.<br>
+    <br>
+    <code>cellpadding</code> &minus; Adds spacing inside table cells.<br>
+    <br>
+    <code>cellspacing</code> &minus; Adds spacing between table cells.</p>
+    </section>
+</body>
+</html>

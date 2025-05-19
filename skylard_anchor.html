@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Anchor</title>
+        <link rel="stylesheet" href="html_reference.css">
+</head>
+<body>
+        <nav>
+                <a href="skylard_paragraph.html">Text</a><br>
+                <a href="skylard_headline.html">Headlines</a><br>
+                <a href="skylard_lists.html">Lists</a><br>
+                <a href="skylard_anchor.html">Anchor</a><br>
+                <a href="skylard_images.html">Images</a><br>
+                <a href="skylard_svg.html">SVG</a><br>
+                <a href="skylard_iframe.html">Iframe</a><br>
+                <a href="skylard_video.html">Video</a><br>
+                <a href="skylard_audio.html">Audio</a><br>
+                <a href="skylard_forms.html">Forms</a><br>
+                <a href="skylard_tables.html">Tables</a><br>
+            </nav>
+<section>
+<h1><code>&lt;a&gt;</code></h1>
+<h1>The anchor tag</h1>       
+<p>The HTML <code>&lt;a&gt;</code> tag, also known as the anchor tag, is used to create hyperlinks, allowing users to navigate<br>
+between different web pages, sections of a page, or external websites. It is one of the most fundamental<br>
+elements in web development.</p>
+</section>
+ <section>   
+<h2>basic syntax</h2>
+
+<code>&lt;a href=&quot;URL&quot;&gt;Link Text&lt;&sol;a&gt;</code>
+<p>The href attribute defines the destination URL where the link should point. The link text (between the<br>
+opening and closing 
+<code>&lt;a&gt;</code> tag) is what users will click on.</p>
+</section>    
+<section>
+<h2>Linking to an External Website</h2>
+
+<p>To create a link to an external site, provide the full URL in the href attribute&colon;</p>
+<code>&lt;a href=&quot;https&colon;&sol;&sol;www.example.com&quot;&gt;Visit Example&lt;&sol;a&gt;</code>
+<p>To open the link in a new tab, add the target=&quot;_blank&quot; attribute&colon;</p>
+<code>&lt;a href=&quot;https&colon;&sol;&sol;www.example.com&quot; target=&quot;_blank&quot;&gt;Visit Example&lt;&sol;a&gt;</code>
+</section>
+<section>
+<h2>Linking to Another Page on the Same Website</h2>
+<p>You can link to another page within your website by specifying the relative path&colon;</p>
+<code>&lt;a href=&quot;about.html&quot;&gt;About Us&lt;&sol;a&gt;</code>
+<p>If the page is in a different folder, specify the path&colon;</p>
+<code>&lt;a href=&quot;pages&sol;contact.html&quot;&gt;Contact&lt;&sol;a&gt;</code>
+</section>
+<section>
+<h2>Linking to a Section Within a Page</h2>
+<p>To navigate to a specific section on the same page, use an id in the target element and link to it using #id&colon;</p>
+<code>&lt;a href=&quot;#section2&quot;&gt;Go to Section 2&lt;&sol;a&gt;</code>
+</section>
+<section>
+<h2>Section 2</h2>
+
+<h2>Email and Phone Links</h2>
+
+<p>The <code>&lt;a&gt;</code> tag can also be used to create email and phone links&colon;</p>
+<p><strong>Email&colon;</strong> Opens the default email client with a pre-filled email address&colon;</p>
+<code>&lt;a href=&quot;mailto&colon;example@email.com&quot;&gt;Send an Email&lt;&sol;a&gt;</code>
+<p><strong>Phone&colon;</strong> Initiates a phone call on mobile devices&colon;</p>
+<code>&lt;a href=&quot;tel&colon;+1234567890&quot;&gt;Call Us&lt;&sol;a&gt;</code>
+</section>
+<section>
+<h2>Adding a Downloadable File Link</h2>
+
+<p>If you want users to download a file, use the download attribute&colon;</p>
+<code>&lt;a href=&quot;files&sol;sample.pdf&quot; download&gt;Download PDF&lt;&sol;a&gt;</code>
+</section>
+
+</body>
+</html>
